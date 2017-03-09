@@ -1,4 +1,4 @@
 machine:
 
-  timezone:
+                 timezone:
        America/Los_Angeles # Set the timezone
