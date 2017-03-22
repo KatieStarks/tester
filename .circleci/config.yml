@@ -1,6 +1,6 @@
 version: 2.0
 jobs:
-  builds:
+  build:
   	docker:
   	  - image: golang:1.8
   	steps:
