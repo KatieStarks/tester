@@ -8,11 +8,16 @@ jobs:
       - run: 
           name: create artifacts
           command: |
-            echo aaa > $CIRCLE_ARTIFACTS/aaa.txt
-            echo aa > $CIRCLE_ARTIFACTS/a a.txt
-          # echo aada > $CIRCLE_ARTIFACTS/aa$a.txt
-          # echo aaaf > $CIRCLE_ARTIFACTS/aa^a.txt
-          # echo aaas > $CIRCLE_ARTIFACTS/a:aa.txt
-          # echo aaaj > $CIRCLE_ARTIFACTS/a+aa.txt
-          # echo aaaw > $CIRCLE_ARTIFACTS/a"?"aa.txt
-          # echo aaa > $CIRCLE_ARTIFACTS/aa\#a.txt
+            mkdir artifacts
+            echo aaa > artifacts/aaa.txt
+            echo aas > artifacts/a a.txt
+          # echo aada > artifacts/aa$a.txt
+          # echo aaaf > artifacts/aa^a.txt
+          # echo aaas > artifacts/a:aa.txt
+          # echo aaaj > artifacts/a+aa.txt
+          # echo aaaw > artifacts/a"?"aa.txt
+          # echo aaa > artifacts/aa\#a.txt
+
+      - store_artifacts: 
+          path: ./artifacts
+          destination: tests
