@@ -1,4 +1,3 @@
-machine:
-
-                 timezone:
-       America/Los_Angeles # Set the timezone
+test:
+  override:
+    - echo aaa > $CIRCLE_ARTIFACTS/aaa.txt
