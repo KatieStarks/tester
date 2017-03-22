@@ -1,12 +1,12 @@
 version: 2
 jobs:
   build:
-  	docker:
-  	  - image: golang:1.8
-  	steps:
-  	  - run: 
-  	  	  name: create artifacts
-  	  	  command: |
+    docker:
+      - image: golang:1.8
+    steps:
+      - run: 
+          name: create artifacts
+          command: |
 		    echo aaa > $CIRCLE_ARTIFACTS/aaa.txt
 		    echo aa > $CIRCLE_ARTIFACTS/a a.txt
 		   # echo aada > $CIRCLE_ARTIFACTS/aa$a.txt
