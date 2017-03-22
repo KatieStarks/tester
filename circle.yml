@@ -1,10 +1,17 @@
-test:
-  override:
-    - echo aaa > $CIRCLE_ARTIFACTS/aaa.txt
-    - echo aa > $CIRCLE_ARTIFACTS/a a.txt
-    - echo aada > $CIRCLE_ARTIFACTS/aa$a.txt
-    - echo aaaf > $CIRCLE_ARTIFACTS/aa^a.txt
-    - echo aaas > $CIRCLE_ARTIFACTS/a:aa.txt
-    - echo aaaj > $CIRCLE_ARTIFACTS/a+aa.txt
-    - echo aaaw > $CIRCLE_ARTIFACTS/a?aa.txt
-    - echo aaa > $CIRCLE_ARTIFACTS/aa\#a.txt
+version: 2.0
+jobs:
+  builds:
+  	docker:
+  	  - image: golang:1.8
+  	steps:
+  	  - run: 
+  	  	  name: create artifacts
+  	  	  command: |
+		    echo aaa > $CIRCLE_ARTIFACTS/aaa.txt
+		    echo aa > $CIRCLE_ARTIFACTS/a a.txt
+		    echo aada > $CIRCLE_ARTIFACTS/aa$a.txt
+		    echo aaaf > $CIRCLE_ARTIFACTS/aa^a.txt
+		    echo aaas > $CIRCLE_ARTIFACTS/a:aa.txt
+		    echo aaaj > $CIRCLE_ARTIFACTS/a+aa.txt
+		    echo aaaw > $CIRCLE_ARTIFACTS/a"?"aa.txt
+		    echo aaa > $CIRCLE_ARTIFACTS/aa\#a.txt
