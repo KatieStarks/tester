@@ -9,14 +9,14 @@ jobs:
           name: create artifacts
           command: |
             mkdir artifacts
-            echo aaa > artifacts/aaa.txt
-          # echo aas > artifacts/a a.txt
-          # echo aada > artifacts/aa$a.txt
-          # echo aaaf > artifacts/aa^a.txt
-          # echo aaas > artifacts/a:aa.txt
-          # echo aaaj > artifacts/a+aa.txt
-          # echo aaaw > artifacts/a"?"aa.txt
-          # echo aaa > artifacts/aa\#a.txt
+            echo aaa > "artifacts/aaa.txt"
+            echo aas > "artifacts/a a.txt"
+            echo aad > "artifacts/aa$a.txt"
+            echo aaa > "artifacts/aa^a.txt"
+            echo aaa > "artifacts/a:aa.txt"
+            echo aaa > "artifacts/a+aa.txt"
+            echo aaa > "artifacts/a?aa.txt"
+            echo aaa > "artifacts/aa\#a.txt"
 
       - store_artifacts: 
           path: ./artifacts
