@@ -1,3 +1,4 @@
 test:
   override:
     - echo aaa > $CIRCLE_ARTIFACTS/aaa.txt
+    - echo bb?b > $CIRCLE_ARTIFACTS/aaa.txt
