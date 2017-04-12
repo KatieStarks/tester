@@ -1,4 +1,9 @@
 test:
   override:
     - echo aaa > $CIRCLE_ARTIFACTS/aaa.txt
-    - echo aaa > $CIRCLE_ARTIFACTS/bb?.txt
+    - echo aaa > $CIRCLE_ARTIFACTS/b b.txt
+    - echo aaa > $CIRCLE_ARTIFACTS/c?c.txt
+    - echo aaa > $CIRCLE_ARTIFACTS/d^d.txt
+    - echo aaa > $CIRCLE_ARTIFACTS/e:e.txt
+    - echo aaa > $CIRCLE_ARTIFACTS/f+f.txt
+    - echo aaa > $CIRCLE_ARTIFACTS/g\#.txt
