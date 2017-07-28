@@ -26,4 +26,4 @@ workflows:
   version: 2
   very-long-workflows-name-yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssss:
     jobs:
-      - build
+      - very-long-job-name-yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssss
